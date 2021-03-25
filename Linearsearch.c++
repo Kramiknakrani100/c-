@@ -13,7 +13,7 @@ int linearsearch(int a[], int n, int key){
     {
         if(a[i] == key)
         {
-        return i;
+        return i+1;
         }
     }
     return -1;  
