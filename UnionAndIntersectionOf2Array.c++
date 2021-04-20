@@ -96,4 +96,6 @@ int main()
     cout << "intersection Is = ";
 
     intersection(a1, a2, m, n);
+
+    return 0;
 }
