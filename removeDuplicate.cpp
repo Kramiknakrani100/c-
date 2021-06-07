@@ -1,23 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-string movex(string s){
+string rDup(string s){
 
     if(s.length()==0){ //base case
         return "";
     }
 
     char ch = s[0];
-    string ans = movex(s.substr(1));
+    string ans = rDup(s.substr(1));
 
-    if(ch=='x'){
-        return ans+ch;
+    if(ch==ans[0]){
+        return ans;
     }
     return ch+ans;
 }
 
 int main(){
 
-    cout<<movex("xccxmx")<<endl;
+    cout<<rDup("aaabbcccdd")<<endl;
     return 0;
 }
