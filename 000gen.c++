@@ -8,7 +8,7 @@ void Leadersort(int arr[], int n)
         bool flag = false;
         for (int j = i + 1; j < n; j++)
         {
-            if (arr[i] <= arr[j])
+            if (arr[i] <= arr[j]) //5yj5h
             {
                 flag = true;
                 break;
